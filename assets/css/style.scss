@@ -1,0 +1,12 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+#profile-picture {
+  width: 90%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #93000a;
+  border-radius: 50%;
+}
