@@ -1,5 +1,6 @@
-<html>
-<h1>A website was born!</h1>
+### Hi, I'm Ryan.
+
+![profile pic](https://avatars3.githubusercontent.com/u/10540084?s=460&v=4)
 
 
 <!--<ul>
@@ -10,5 +11,3 @@
     </li>
   {% endfor %}
 </ul> -->
-
-</html>
