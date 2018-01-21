@@ -1,7 +1,6 @@
 ### Hi, I'm Ryan.
 
-![profile pic](https://avatars3.githubusercontent.com/u/10540084?s=460&v=4)
-
+<img style="position: absolute;" src="https://avatars3.githubusercontent.com/u/10540084?s=460&v=4" alt="profile pic">
 
 <!--<ul>
   {% for post in site.posts %}
