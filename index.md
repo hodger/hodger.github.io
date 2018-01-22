@@ -1,6 +1,6 @@
 ### Hi, I'm Ryan.
 
-<img style="position: absolute; max-width: 85%;" src="https://avatars3.githubusercontent.com/u/10540084?s=460&v=4" alt="profile pic">
+<img style="position: absolute; max-width: 90%;" src="https://user-images.githubusercontent.com/10540084/35239981-062ce7a4-ff80-11e7-89e2-1a3b6649177f.jpg" alt="profile pic">
 
 <!--<ul>
   {% for post in site.posts %}
