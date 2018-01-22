@@ -1,7 +1,9 @@
 
   {% for post in site.posts %}
-      <a href="{{ post.url }}"><p>{{ post.title }}</p></a>
+    <div>      
+<a href="{{ post.url }}"><p>{{ post.title }}</p></a>
       <p><i>{{ post.date }}</i></p>
       <p>{{ post.content }}</p>
+   </div>
   {% endfor %}
 
