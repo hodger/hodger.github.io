@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+a {
+ color: black; 
+}
+
 #profile-picture {
   width: 90%;
   border-style: solid;
