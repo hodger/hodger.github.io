@@ -1,3 +1,1 @@
-<!-- <iframe style="width: 100%;" src="https://drive.google.com/file/d/0B0nsDj3ZPjGfRTBJTzJ3andjUElIYmMtZlB6R24tT2wtOV9r/preview" height="480"></iframe> -->
-
-![resume](https://github.com/hodger/hodger.github.io/files/2614066/Ryan.Hodge.2018.Resume.pdf)
+![resume](https://user-images.githubusercontent.com/10540084/48993068-6b6e2d00-f0f0-11e8-8cf3-032d25ad8c3e.png)
