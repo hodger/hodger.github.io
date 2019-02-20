@@ -6,7 +6,7 @@ I started programming at the start of high school, primarily out of curiousity- 
 
 Eventually, my hobby led me to the University of South Carolina, where I got my Bachelor's in Computer Science. I was fortunate to get a lot of development experience during school, both in research positions and internships. You can check out my resume or LinkedIn for a more comprehensive list, but if I can summarize, I left school with a particular love of Python, Git, and learning the best way to solve a problem.
 
-Currently I work as a software developer at Boeing, hacking on things like microservices frameworks and data streaming platforms.
+Currently I work as a software developer at Boeing in Seattle, hacking on things like microservices frameworks and data streaming platforms.
 
 **Other:** *Writing and Music*
 
