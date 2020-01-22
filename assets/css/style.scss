@@ -36,3 +36,81 @@ section {
       width: 100%;  
     }
 }
+
+.primary-color {
+  color: #b42eeb;
+}
+
+.left-border {
+  border-left: 5px solid #b42eeb;
+  padding-left: 1em;
+}
+
+.resume-header {
+  margin-bottom: 2em;
+}
+
+.header-name {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.header-info {
+  display: inline;
+  margin-top: 1em;
+}
+
+.divider-heading {
+  font-size: 13px;
+  background-color: #e0e0e0;
+  color: slategray;
+  border-radius: 5px;
+  padding: .5em;
+  display: inline-block;
+  min-width: 100px;
+  text-align: center;
+}
+
+.divider-line {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-top: -2.5em;
+}
+
+.company-section-heading {
+  font-size: 17px;
+  margin-top: 2em;
+  margin-bottom: 0.25em;
+  font-weight: 700;
+}
+
+.job-card {
+  margin-top: .5em;
+  padding: 1em;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.job-title {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  margin-bottom: 0em;
+  color: #272727;
+}
+
+.job-team {
+  margin-bottom: 0;
+}
+
+.job-subheading {
+  font-size: 11px;
+  display: inline;
+  margin-right: 1em;
+}
+
+.show-more-button {
+  cursor: pointer;
+  text-align: center;
+  margin-top: .25em;
+  font-style: italic;
+}

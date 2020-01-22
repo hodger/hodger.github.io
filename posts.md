@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "Posts"
+permalink: /posts
+---
+
 {% for post in site.posts %}
    <div>      
       <a href="{{ post.url }}"><h2 style="color: darkblue;">{{ post.title }}</h2></a>

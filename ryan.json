@@ -1,0 +1,77 @@
+{
+    "name": "Ryan Hodge",
+    "contactInfo": {
+        "phone": "(513) 706-2868",
+        "email": "ryanwalterhodge <at> gmail.com",
+        "location": "Seattle, WA"
+    },
+    "education": [
+
+    ],
+    "jobs": [
+        {
+            "company": "PayScale, Inc.",
+            "positions": [
+                {
+                    "title": "Software Engineer II",
+                    "team": "Growth Engineering",
+                    "location": "Seattle, WA",
+                    "start": "January 2020",
+                    "end": null,
+                    "duties": [
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            "company": "The Boeing Company",
+            "positions": [
+                {
+                    "title": "Software Developer III",
+                    "team": "Integration Solutions",
+                    "location": "Seattle, WA",
+                    "start": "June 2019",
+                    "end": "January 2020",
+                    "duties": [
+                        "Full stack developer and product dev lead, responsible for delivering supply chain and finance applications recognized by executive leadership for $10+ million in cost savings.",
+                        "Built out scalable, microservices architectures as the foundations of internal and externally-facing solutions."
+                    ]
+                },
+                {
+                    "title": "Software Developer II",
+                    "team": "Integration Solutions",
+                    "location": "Seattle, WA",
+                    "start": "January 2019",
+                    "end": "June 2019",
+                    "duties": [
+                        
+                    ]
+                },
+                {
+                    "title": "System Design & Integration Spec. II",
+                    "team": "International System Design",
+                    "location": "Seattle, WA",
+                    "start": "June 2018",
+                    "end": "January 2019",
+                    "duties": [
+                        "6 month rotation in Boeing's tech leadership rotation program."
+                    ]
+                },
+                {
+                    "title": "Software Development Intern",
+                    "team": "Enterprise Cloud Services",
+                    "location": "Charleston, SC",
+                    "start": "May 2017",
+                    "end": "June 2018",
+                    "duties": [
+                        "Replaced critical legacy software for Active Directory management with modern SPA and .NET Core web services, improving app reliability and UX for thousands of daily users."
+                    ]
+                }
+            ]
+        }
+    ],
+    "skills": [
+
+    ]
+}

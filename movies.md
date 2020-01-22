@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "Movies"
+permalink: /movies
+---
+
 ### My short films.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VhRAop8MYsI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
