@@ -69,6 +69,22 @@
                     ]
                 }
             ]
+        },
+        {
+            "company": "University of South Carolina",
+            "positions": [
+                {
+                    "title": "Research Assistant and Developer",
+                    "team": "Nuclear Engineering Dept.",
+                    "location": "Columbia, SC",
+                    "start": "September 2015",
+                    "end": "September 2017",
+                    "duties": [
+                        "Regular contributor to Cyclus, an open source, fuel cycle simulation platform.",
+                        "Built code generation into Cyclus' build system to support user-defined data types."
+                    ]
+                }
+            ]
         }
     ],
     "skills": [

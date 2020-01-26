@@ -5,10 +5,8 @@ const useState = React.useState;
 const useEffect = React.useEffect;
 
 function ResumeHeader(props) {
-    const [name, setName] = useState(props.name);
-
     return e('div', {className: 'resume-header left-border'}, 
-        e('h1', {className: "header-name"}, name),
+        e('h1', {className: "header-name"}, props.name),
         e('h3', {className: "header-info"}, props.location + " • " + props.phone + " • " + props.email)
     );
 }
@@ -55,8 +53,9 @@ function CompanySection(props) {
         props.positions.length <= 1 ? '' : e('p', {onClick: () => handleChange(), className: 'show-more-button'}, 
                                             (showPrevious ? '▲ Hide ' : '▼ Show ') 
                                             + (props.positions.length - 1).toString() 
-                                            + ' previous jobs')
-    )
+                                            + ' previous positions at '
+                                            + props.name)
+    );
 }
 
 function JobCard(props) {
