@@ -4,6 +4,79 @@ const e = React.createElement;
 const useState = React.useState;
 const useEffect = React.useEffect;
 
+function Resume(json) {
+    const [mode, setMode] = useState("");
+    const [query, setQuery] = useState("");
+    
+    useEffect(() => {
+        if (location.search) {
+            let temp = location.href.split('?')[1];
+            const [key, value] = temp.split("=");
+            setMode(key.toLowerCase());
+            setQuery(decodeURI(value));
+        } else {
+            setMode(null); 
+            setQuery(null);
+        }
+    });
+
+    switch (mode) {
+        case "skill":
+            return e(SkillSearchResume, {json, query});
+        default:
+            return e(ChronologicalResume, json);
+    }
+}
+
+function SkillSearchResume({json, query}) {
+    const relevantJobs = () => 
+        json.jobs.map(j => j.positions)
+                 .flat()
+                 .filter(p => p.skills && p.skills.map(s => s.toLowerCase())
+                                                  .includes(query.toLowerCase()));
+
+    const [positions, setPositions] = useState(relevantJobs());
+
+    useEffect(() => {
+        setPositions(relevantJobs());
+    }, [query]);
+
+    return e('div', {}, 
+                        e(Divider, {heading: 'Matching Experience'}),
+                        e(SkillChip, {skill: query}),
+                        e('p', {style: 
+                                    {display: "inline",
+                                     cursor: "pointer"}, 
+                                onClick: () => {
+                                    reload('/resume');
+                                }}, 'clear'),
+                        positions.map((p, index) => e(JobCard, {
+                            key: index,
+                            title: p.title, 
+                            team: p.team,
+                            location: p.location,
+                            start: p.start, 
+                            end: p.end,
+                            duties: p.duties,
+                            skills: p.skills
+                        }))
+                    );
+}
+
+function ChronologicalResume(json) {
+    return e('div', {}, 
+                        e(Divider, {heading: 'Experience'}),
+                            json.jobs.map(
+                                (j, index) => 
+                                    e(CompanySection, 
+                                    {
+                                        key: index, 
+                                        name: j.company, 
+                                        positions: j.positions
+                                    }
+                        )));
+}
+
 function ResumeHeader(props) {
     return e('div', {className: 'resume-header left-border'}, 
         e('h1', {className: "header-name"}, props.name),
@@ -46,7 +119,8 @@ function CompanySection(props) {
                     location: p.location,
                     start: p.start, 
                     end: p.end,
-                    duties: p.duties
+                    duties: p.duties,
+                    skills: p.skills
                 }
             )
         ),
@@ -63,9 +137,9 @@ function JobCard(props) {
         e('p', {className: "job-title"}, props.title),
         e('p', {className: "job-team"}, props.team),
         e(DutiesList, {duties: props.duties}),
+        e(SkillList, {skills: props.skills ? props.skills : []}),
         e('p', {className: "job-subheading"}, props.location),
         e('p', {className: "job-subheading"}, '(' + props.start + ' - ' + (props.end ? props.end : 'present') + ')')
-        //e('p', {}, props.technologies)
     )
 }
 
@@ -73,18 +147,33 @@ function DutiesList(props) {
     return e('ul', {style: {padding: "1em", marginBottom: "0"}}, props.duties.map((duty, index) => e('li', {key: index}, duty)));
 }
 
-function Resume(json) {
-    return e('div', {}, 
-        e(ResumeHeader, {name: json.name, location: json.contactInfo.location, phone: json.contactInfo.phone, email: json.contactInfo.email}),
-        e(Divider, {heading: 'Experience'}),
-        json.jobs.map((j, index) => e(CompanySection, {key: index, name: j.company, positions: j.positions}))
-    );
+function SkillList(props) {
+    return e('div', {}, props.skills.map((s, index) => e(SkillChip, {key: index, skill: s})));
 }
 
+function SkillChip(props) {
+    const [color, setColor] = useState(props.color ? props.color : "rgba(0, 255, 220, 0.32)");
+    return (e('div', 
+                {
+                    className: "skill-chip", 
+                    style: {backgroundColor: color},
+                    title: "See all '" + props.skill + "' positions",
+                    onClick: () => {
+                        reload("?skill=" + encodeURI(props.skill));
+                    }
+                }, 
+            props.skill));
+}
 
 const domContainer = document.querySelector('#resume');
 
-fetch("ryan.json")
-    .then(response => response.json())
-    .then(json => ReactDOM.render(e(Resume, json), domContainer));
+const reload = (query) => {
+    console.log("reloading...");
+    window.history.replaceState(null, null, query);
+    fetch("ryan.json")
+        .then(response => response.json())
+        .then(json => ReactDOM.render(e(Resume, json), domContainer));
+}
+
+reload();
 

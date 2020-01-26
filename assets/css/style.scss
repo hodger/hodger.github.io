@@ -114,3 +114,17 @@ section {
   margin-top: .25em;
   font-style: italic;
 }
+
+.skill-chip {
+  border-radius: 10px;
+  font-size: 11px;
+  display: inline-block;
+  min-width: 30px;
+  text-align: center;
+  padding: .2em 1em;
+  margin-right: .25em;
+}
+  .skill-chip:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
