@@ -6,7 +6,20 @@
         "location": "Seattle, WA"
     },
     "education": [
-
+        {
+            "institution": "University of South Carolina",
+            "credentials": [
+                {
+                    "title": "B.S. Computer Science",
+                    "location": "Columbia, SC",
+                    "duties": [
+                        "GPA: 3.7",
+                        "Minor: Mathematics",
+                        "Member, South Carolina Honors College"
+                    ]
+                }
+            ]
+        }
     ],
     "jobs": [
         {
