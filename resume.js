@@ -44,7 +44,7 @@ function SkillSearchResume({json, query}) {
     return e('div', {}, 
                         e(Divider, {heading: 'Matching Experience'}),
                         e(SkillChip, {skill: query}),
-                        e('p', {style: 
+                        e('i', {style: 
                                     {display: "inline",
                                      cursor: "pointer"}, 
                                 onClick: () => {
@@ -65,6 +65,16 @@ function SkillSearchResume({json, query}) {
 
 function ChronologicalResume(json) {
     return e('div', {}, 
+                        e(Divider, {heading: 'Education'}),
+                            json.education.map(
+                                (ed, index) => 
+                                    e(CompanySection,
+                                        {
+                                            key: index,
+                                            name: ed.institution,
+                                            positions: ed.credentials
+                                        })
+                            ),
                         e(Divider, {heading: 'Experience'}),
                             json.jobs.map(
                                 (j, index) => 
@@ -74,7 +84,9 @@ function ChronologicalResume(json) {
                                         name: j.company, 
                                         positions: j.positions
                                     }
-                        )));
+                            )
+                        )
+            );
 }
 
 function ResumeHeader(props) {
@@ -108,7 +120,7 @@ function CompanySection(props) {
 
     return e('div', {}, 
         e('h3', {className: 'primary-color company-section-heading'}, props.name),
-        e('p', {}, companyStart + ' - ' + companyEnd),
+        e('p', {}, companyStart ? companyStart + ' - ' + companyEnd : ''),
         displayedJobs.map((p, index) => 
             e(JobCard, 
                 {
@@ -139,7 +151,8 @@ function JobCard(props) {
         e(DutiesList, {duties: props.duties}),
         e(SkillList, {skills: props.skills ? props.skills : []}),
         e('p', {className: "job-subheading"}, props.location),
-        e('p', {className: "job-subheading"}, '(' + props.start + ' - ' + (props.end ? props.end : 'present') + ')')
+        props.start ? e('p', {className: "job-subheading"}, '(' + props.start + ' - ' + (props.end ? props.end : 'present') + ')')
+            : ''
     )
 }
 
