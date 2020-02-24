@@ -17,5 +17,5 @@ Currently I work as a software engineer at [PayScale](https://payscale.com) in S
 
 **Other Stuff**
 
-Respectively: especially satirical writing, and especially piano and electric guitar. I founded a [satirical newspaper at U of SC](http://thirdspur.com) with some friends, which was an amazing experience. I've also done a bit of acting and writing for short films, which you can see on a different page of this website.
+I do a bit of creative writing and making music (piano and guitar, mostly). I founded a [satirical newspaper at U of SC](http://thirdspur.com) with some friends, which was an amazing experience. I've also done a bit of acting and writing for short films, which you can see on a different page of this website.
 
