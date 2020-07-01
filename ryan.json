@@ -32,14 +32,17 @@
                     "start": "January 2020",
                     "end": null,
                     "duties": [
-                        
+                        "Build features for PayScale's e-commerce products- React components and C# web APIs.",
+                        "Developed and assisted with design of email validation and verification system for PayScale.com."
                     ],
                     "skills": [
                         "C#",
                         ".NET Core",
+                        "JavaScript",
+                        "NodeJS",
                         "React",
-                        "Azure",
-                        "git"
+                        "Jest",
+                        "Azure"
                     ]
                 }
             ]
@@ -61,6 +64,7 @@
                         "Java",
                         "Spring Boot",
                         "Zuul",
+                        "Angular",
                         "Microservices",
                         "Pivotal Cloud Foundry",
                         "Python"
