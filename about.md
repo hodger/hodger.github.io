@@ -19,3 +19,10 @@ Currently I work as a software engineer at [PayScale](https://payscale.com) in S
 
 I do a bit of creative writing and making music (piano and guitar, mostly). I founded a [satirical newspaper at U of SC](http://thirdspur.com) with some friends, which was an amazing experience. I've also done a bit of acting and writing for short films, which you can see on a different page of this website.
 
+<iframe
+  src="https://www.payscale.com/salary-calculator/calculator-widget"
+  width="300"
+  height="370"
+  scrolling="no"
+  frameborder="0"
+/>
