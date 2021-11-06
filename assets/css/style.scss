@@ -1,6 +1,5 @@
 ---
 ---
-
 @import "{{ site.theme }}";
 
 a {
@@ -13,6 +12,14 @@ a {
   border-width: 2px;
   border-color: #93000a;
   border-radius: 50%;
+}
+
+.homepage-pic {
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
 }
 
 .view.social {
@@ -63,12 +70,14 @@ section {
 .divider-heading {
   font-size: 13px;
   background-color: #e0e0e0;
-  color: slategray;
+  color: black;
+  font-weight: 600;
   border-radius: 5px;
   padding: .5em;
   display: inline-block;
   min-width: 100px;
   text-align: center;
+  margin-top: 25px;
 }
 
 .divider-line {
@@ -124,8 +133,8 @@ section {
   text-align: center;
   padding: .2em 1em;
   margin-right: .25em;
-}
-  .skill-chip:hover {
+  &:hover {
     cursor: pointer;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   }
+}

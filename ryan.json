@@ -23,6 +23,26 @@
     ],
     "jobs": [
         {
+            "company": "SoFi",
+            "positions": [
+                {
+                    "title": "Senior Software Engineer",
+                    "team": "Lantern by SoFi",
+                    "location": "Seattle, WA",
+                    "start": "November 2021",
+                    "end": null,
+                    "duties": [
+                       "Frontend engineer on the Lantern team, building features for lanterncredit.com." 
+                    ],
+                    "skills": [
+                        "React",
+                        "TypeScript",
+                        "Next.js"
+                    ]
+                }
+            ]
+        },
+        {
             "company": "PayScale, Inc.",
             "positions": [
                 {
@@ -30,7 +50,7 @@
                   "team": "Growth Engineering",
                   "location": "Seattle, WA",
                   "start": "January 2021",
-                  "end": null,
+                  "end": "October 2021",
                   "duties": [
                         "Oversee development and maintenance of (nearly) everything you'll find on payscale.com, including MyPayScale, the Salary Survey, Research Center, PayScale Index, and more.",
                         "Lead sprint planning, grooming and retrospectives for team of 5 engineers, and support team via regular 1:1s and pairing sessions.",
@@ -39,12 +59,11 @@
                   "skills": [
                      "C#",
                      ".NET Core",
+                     "Next.js",
                      "TypeScript",
                      "React",
                      "Redux",
-                     "Azure",
-                     "Docker",
-                     "PHP"
+                     "Azure"
                   ]
                 },
                 {

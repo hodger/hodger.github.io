@@ -10,7 +10,7 @@ function Resume(json) {
     
     useEffect(() => {
         if (location.search) {
-            let temp = location.href.split('?')[1];
+            let temp = location.search.slice(1);
             const [key, value] = temp.split("=");
             setMode(key.toLowerCase());
             setQuery(decodeURI(value));
@@ -165,14 +165,14 @@ function SkillList(props) {
 }
 
 function SkillChip(props) {
-    const [color, setColor] = useState(props.color ? props.color : "rgba(0, 255, 220, 0.32)");
+    const color = props.color ?? "rgba(0, 255, 220, 0.32)";
     return (e('div', 
                 {
                     className: "skill-chip", 
                     style: {backgroundColor: color},
                     title: "See all '" + props.skill + "' positions",
                     onClick: () => {
-                        reload("?skill=" + encodeURI(props.skill));
+                        reload("/resume?skill=" + encodeURI(props.skill));
                     }
                 }, 
             props.skill));

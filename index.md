@@ -4,9 +4,9 @@ title:  ""
 permalink: /
 ---
 
-### Hi, I'm Ryan.
+<h2 class="homepage-message">Hi, I'm Ryan.</h2>
 
-<img style="max-width: 90%;" src="https://user-images.githubusercontent.com/10540084/35239981-062ce7a4-ff80-11e7-89e2-1a3b6649177f.jpg" alt="profile pic">
+<img class="homepage-pic" style="max-width: 90%;" src="https://user-images.githubusercontent.com/10540084/120427151-404e9f00-c326-11eb-9f15-c57fae5069e1.jpg" alt="profile pic">
 
 <!--<ul>
   {% for post in site.posts %}
